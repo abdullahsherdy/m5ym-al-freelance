@@ -6,90 +6,122 @@
     <title>مـخيم الفريلانـس</title>
     <style>
 
-         /* General Styles */
-         body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 600px;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-        }
+       /* General Styles */
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-      /* Full-Width Header */
-        .header {
-            width: 100%; /* Full width */
-            background-image: url('photo_2025-01-31_04-33-09.jpg'); /* Ensure the image URL is correct */
-            background-size: cover; /* Make sure the image covers the container without stretching */
-            background-position: center; /* Center the background image */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
-            text-align: center;
-            color: white;
-            min-height: 300px; /* Set a minimum height for the header */
-        }
+/* Full-Width Header */
+.header {
+    width: 100%;
+    background-image: url('photo_2025-01-31_04-33-09.jpg'); /* Ensure the image URL is correct */
+    background-size: cover; /* Make sure the image covers the container without stretching */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    text-align: center;
+    color: white;
+    min-height: 300px; /* Set a minimum height for the header */
+}
 
-        /* Form Styles */
-        label {
-            display: block;
-            margin-top: 12px;
-            font-weight: bold;
-        }
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+/* Container for form */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    min-height: 50vh; /* Ensure container has a minimum height */
+}
 
-        /* Checkboxes Styling */
-        .checkbox-group {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .checkbox-group label {
-            flex: 1 1 45%;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            margin: 5px 0; /* Adjust margin for better spacing */
-        }
-        input[type="checkbox"] {
-            margin: 0 5px 0 0; /* Remove left margin and add right margin */
-            width: 16px; /* Set a fixed width for checkboxes */
-            height: 16px; /* Set a fixed height for checkboxes */
-        }
+/* Form Styles */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-        /* Submit Button */
-        button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkbox-group label {
+    flex: 1 1 45%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+input[type="checkbox"] {
+    margin: 0 5px 0 0;
+    width: 16px;
+    height: 16px;
+}
 
-        /* Responsive */
-        @media (max-width: 480px) {
-            .checkbox-group label {
-                flex: 1 1 100%;
-            }
-        }
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        min-height: 250px; /* Adjust header height for smaller screens */
+    }
+
+    .container {
+        padding: 15px;
+        min-height: 60vh; /* Adjust container height */
+    }
+
+    .checkbox-group label {
+        flex: 1 1 100%; /* Stack checkboxes vertically on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        min-height: 200px; /* Further reduce header height for very small screens */
+    }
+
+    .container {
+        padding: 10px;
+        min-height: 70vh; /* Increase container height for smaller screens */
+    }
+
+    .header {
+        background-size: cover; /* Ensure the image covers the header */
+    }
+
+    button {
+        font-size: 14px; /* Adjust font size for buttons on smaller screens */
+    }
+}
+
     </style>
 </head>
 <body>
