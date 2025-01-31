@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مـخيم الفريلانـس</title>
     <style>
-        /* General Styles */
-        body {
+
+         /* General Styles */
+         body {
             font-family: 'Tajawal', sans-serif;
             background-color: #f8f9fa;
             color: #333;
@@ -22,17 +23,16 @@
             margin: 20px auto;
         }
 
-        /* Header Styles */
+      /* Full-Width Header */
         .header {
-            background-color: #bf00ff; /* Adjust this color to match your PDF */
-            padding: 20px;
+            width: 100%; /* Full width */
+            background-image: url('photo_2025-01-31_04-33-09.jpg'); /* Ensure the image URL is correct */
+            background-size: cover; /* Make sure the image covers the container without stretching */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
             text-align: center;
-            border-radius: 8px 8px 0 0;
-            margin-bottom: 20px;
-        }
-        .header img {
-            max-width: 100px; /* Adjust the size of the logo */
-            height: auto;
+            color: white;
+            min-height: 300px; /* Set a minimum height for the header */
         }
 
         /* Form Styles */
@@ -95,9 +95,7 @@
 <body>
     <div class="container">
         <!-- Header with Logo -->
-        <div class="header">
-            <img src="logo-01.png" alt="مـخيم الفريلانـس">
-        </div>
+        <div class="header"> </div>
 
         <form id="registrationForm"
             method="post"
